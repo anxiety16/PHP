@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Calculate the Area of a Triangle</h2>
-    <form method="post">
+    <form method="get">
         Side 1: <input type="number" step="0.01" name="side1" required><br>
         Side 2: <input type="number" step="0.01" name="side2" required><br>
         Side 3: <input type="number" step="0.01" name="side3" required><br>
@@ -16,10 +16,10 @@
 
     <?php
 
-    if (isset($_POST['side1']) && isset($_POST['side2']) && isset($_POST['side3'])) {
-        $side1 = $_POST['side1'];
-        $side2 = $_POST['side2'];
-        $side3 = $_POST['side3'];
+    if (isset($_GET['side1']) && isset($_GET['side2']) && isset($_GET['side3'])) {
+        $side1 = $_GET['side1'];
+        $side2 = $_GET['side2'];
+        $side3 = $_GET['side3'];
         $s = ($side1 + $side2 + $side3) / 2;
         $area = ($s * ($s - $side1) * ($s - $side2) * ($s - $side3));
         $area = $area ** 0.5;
