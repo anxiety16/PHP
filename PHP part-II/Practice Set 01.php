@@ -1,5 +1,6 @@
 <?php
-
+/* I created a function of a array for readabily of the variable items 
+*/
 function calculateTotalPrice(array $items): float {
     $total = 0;
     foreach ($items as $item) {
@@ -30,5 +31,11 @@ function checkEvenOdd(int $number): string {
 
 $number = 42;
 echo "\n" . checkEvenOdd($number);
-
+/* A possible result or expected result of a program that i modefy is 
+resulrt:
+        Total price: $45
+        Modified string: thisisapoorlywrittenprogramwithlittlestructureandreadability.
+        The number 42 is even. 
+    */
 ?>
+
