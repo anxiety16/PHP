@@ -49,8 +49,8 @@ echo "${name} is ${age} years old";
 echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
 Question 4: What character is used to concatenate strings?
 answer:
-    all of that are correct but one that have a string  depreacted that is a second echo, the first one is totaly correct 
-    and the last one is base a condition in html but it is also working 
+    Everything is correct except for one part, where a string is deprecated in the second echo. 
+    The first one is entirely correct, and the last one is based on a condition in HTML, but it's still functioning.
 */
 
 /*
